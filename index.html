@@ -4,7 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Qiaowei Wang</title>
-  <meta name="description" content="Qiaowei Wang: projects built in public.">
+  <meta name="description" content="Qiaowei Wang: projects built in public, including interactive explainers of sign-in, certificates, secrets, directories, and identity for AI agents.">
+  <meta property="og:title" content="Qiaowei Wang">
+  <meta property="og:description" content="Projects I build in public, including Robo Orders Pizza: interactive scenes on sign-in, certificates, secrets, directories, and identity for AI agents.">
+  <meta property="og:url" content="https://qiaowei.wang/">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://qiaowei.wang/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://qiaowei.wang/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Qiaowei Wang",
+  "url": "https://qiaowei.wang/",
+  "sameAs": [
+    "https://www.linkedin.com/in/qiaoweiwang/",
+    "https://github.com/Biubiuwang123"
+  ],
+  "knowsAbout": [
+    "Customer identity and access management",
+    "OAuth 2.0 and OpenID Connect",
+    "Digital certificates and PKI",
+    "Secrets management",
+    "Directory services",
+    "Identity for AI agents",
+    "Pricing and product economics"
+  ]
+}
+  </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root { --bg:#fbf7f0; --surface:#fff; --text:#2a2420; --muted:#6b6159; --border:#e6dccd; --accent:#c8452c; color-scheme: light; }
@@ -21,6 +49,8 @@
     .project img { flex:none; }
     .project strong { display:block; font-size:1.1rem; }
     .project span { color:var(--muted); font-size:.95rem; }
+    .scenes { list-style:none; padding:0; margin:14px 0 0; display:grid; gap:8px; font-size:.95rem; }
+    .scenes span { color:var(--muted); display:block; font-size:.88rem; }
     .links { margin-top:40px; display:flex; gap:20px; font-size:.95rem; }
     a { color:var(--accent); }
     footer { color:var(--muted); font-size:.85rem; margin-top:56px; }
@@ -36,9 +66,16 @@
       <img src="favicon.svg" alt="" width="44" height="44">
       <div>
         <strong>Robo Orders Pizza</strong>
-        <span>Sign-in, certificates, secrets and directories, made something you can click: a robot orders pizza for a class party.</span>
+        <span>Five interactive scenes that make security infrastructure something you can click, break, and fix, told through a robot ordering pizza for a class party.</span>
       </div>
     </a>
+    <ul class="scenes">
+      <li><a href="https://robo.qiaowei.wang/scenes/front-door.html">Who's at the door?</a> <span>Customer identity and sign-in: tokens, MFA, lockout</span></li>
+      <li><a href="https://robo.qiaowei.wang/scenes/badges.html">Is that badge real?</a> <span>Certificates and PKI: TLS, private CAs, mutual TLS, revocation</span></li>
+      <li><a href="https://robo.qiaowei.wang/scenes/locked-box.html">The locked box</a> <span>Secrets management: encryption, access policy, rotation</span></li>
+      <li><a href="https://robo.qiaowei.wang/scenes/staff-roster.html">The staff roster</a> <span>Workforce directories: groups, LDAP, single sign-on</span></li>
+      <li><a href="https://robo.qiaowei.wang/scenes/robo-gets-a-job.html">Robo gets a job</a> <span>Identity for AI agents: consent, scopes, token vaults</span></li>
+    </ul>
 
     <div class="links">
       <a href="https://github.com/Biubiuwang123" rel="noopener">GitHub</a>
